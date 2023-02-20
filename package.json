@@ -1,0 +1,20 @@
+{
+  "name": "awesome-book",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhambhoyar077/awesome-book.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhambhoyar077/awesome-book/issues"
+  },
+  "homepage": "https://github.com/shubhambhoyar077/awesome-book#readme"
+}
