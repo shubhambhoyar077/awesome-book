@@ -157,3 +157,10 @@ footer .footer-info {
 .disable-section {
   display: none;
 }
+
+.diable-msg{
+  display: none;
+}
+#book-add-msg{
+  color: green;
+}

@@ -8,8 +8,6 @@ const autName = document.getElementById('auther_name');
 const addBtn = document.getElementById('addButton');
 
 const newBook = new Book(bookList);
-newBook.restoreBook();
-
 
 addBtn.addEventListener('click', () => {
   newBook.addBook(bookName.value, autName.value);
@@ -28,4 +26,5 @@ navList.addEventListener('click', (event) => {
   navBar(event);
 });
 
+newBook.restoreBook();
 showDateTime();
