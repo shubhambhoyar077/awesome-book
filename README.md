@@ -34,7 +34,7 @@
 
 # 📖 [Awesome Books] <a name="about-project"></a>
 
-**[Awesome Books]** is a collab project. Created using HTML, CSS and Javascript.
+**[Awesome Books]** is a book store project. Created using HTML, CSS and Javascript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -74,7 +74,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo not available]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +90,7 @@ In order to run this project you need: any web-browser.
 
 ### Setup
 
-Clone this [repository](https://github.com/jeanbuhendwa/awesome-books) to your desired folder.
+Clone this [repository](https://github.com/shubhambhoyar077/awesome-books) to your desired folder.
 
 ### Install
 
@@ -117,10 +117,6 @@ You can deploy this project using: Project is incomplete.
 👤 **Shubham Bhoyar**
 
 - GitHub: [@shubhambhoyar077]
-
-👤 **Jean Jacques Buhendwa**
-
-- GitHub: [@jeanbuhendwa]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
