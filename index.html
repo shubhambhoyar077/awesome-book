@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav-bar">
+        <span>Awesome Book</span>
+        <ul class="nav-list">
+          <li class="link" id="book-list">List</li>
+          <li class="link" id="add-book">Add New</li>
+          <li class="link" id="contact">Contact</li>
+        </ul>
+      </nav>
+      <div class="currentDateTime">
+        <span id="currentDateTime"></span>
+      </div>
+    </header>
+    <main class="container">
+      <div id="book_section">
+        
+        <section class="book_section">
+          <h2>All awesome books</h2>
+          <ul class="books"></ul>
+        </section>
+      </div>
+
+      <form class="disable-section" id="form-section" action="#" method="#">
+        <h2>Add a new book</h2>
+        <label for="book_name"></label>
+        <input
+          type="text"
+          id="book_name"
+          placeholder="Add the book name"
+        />
+        <label for="auther_name"></label>
+        <input
+          type="text"
+          id="auther_name"
+          placeholder="Add the author name"
+        />
+        <button type="submit" id="addButton">Add</button>
+        <small id="book-add-msg" class="diable-msg">sample book added</small>
+      </form>
+
+      <section class="contacts_info disable-section" id="contact-section">
+        <h2>Contact Information</h2>
+        <p>Do have any question or just want to say "Hello"?</p>
+        <span>You can reach out to us!</span>
+        <ul>
+          <li class="list-contact">Our Emial: awesomebook@gmail.com</li>
+          <li class="list-contact">Our phone number: 009988776655</li>
+          <li class="list-contact">Our addrress: Ctreehome 543, 7346 City, Country</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <span class="footer-info">Copyrights Lorem ipsum dolor sit amet.</span>
+      </div>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
