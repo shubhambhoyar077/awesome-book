@@ -1,7 +1,8 @@
-
+import { Storage } from "./storage.js";
 
 export class Book {
   constructor(bookList) {
+    this.storage = new Storage();
     this.bookStore = [
       {
         id: 'book_0',
@@ -45,20 +46,27 @@ export class Book {
   removeBook(event) {
     const parentli = event.target.parentElement;
     this.bookStore = this.bookStore.filter((book) => book.id !== parentli.id);
-    bookList.removeChild(e.target.parentElement);
+    this.bookList.removeChild(event.target.parentElement);
     this.updateLocalStorage();
   }
 
-  restoreLocalStorage() {
-    this.bookStore = JSON.parse(localStorage.getItem('book_list'));
-    this.bookCount = JSON.parse(localStorage.getItem('book_count'));
+  restoreBook(){
+    if (!localStorage.getItem('book_list')) {
+      this.storage.updateLocalStorage(this.bookStore, this.bookCount);
+      [this.bookStore, this.bookCount] = this.storage.getLocalStorage();
+    } else {
+      [this.bookStore, this.bookCount] = this.storage.getLocalStorage();
+    }
     for (let i = 0; i < this.bookStore.length; i += 1) {
       this.displayBook(this.bookStore[i]);
     }
   }
 
-  updateLocalStorage() {
-    localStorage.setItem('book_list', JSON.stringify(this.bookStore));
-    localStorage.setItem('book_count', JSON.stringify(this.bookCount));
+  updateLocalStorage(){
+    this.storage.updateLocalStorage(this.bookStore, this.bookCount);
   }
+
+
+
+  
 }
