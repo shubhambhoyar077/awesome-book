@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* justify-content: center; */
+  padding: 2% 7%;
+
+  /* max-width: 1100px; */
+}
+
+h2 {
+  padding-bottom: 2%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  padding: 2% 3%;
+  max-width: 1000px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-bar .nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav-bar .nav-list .link {
+  text-align: center;
+  padding: 0 3%;
+  border-right: 2px solid black;
+}
+
+.nav-bar .nav-list .link:hover {
+  color: blue;
+}
+
+#contact {
+  border: none;
+}
+
+#book_section {
+  width: 100%;
+}
+
+.book_section {
+  border: 2px solid black;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.books {
+  list-style: none;
+  padding: 0;
+}
+
+.books li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.books li:nth-child(even) {
+  background-color: white;
+}
+
+.books li:nth-child(odd) {
+  background-color: rgb(200, 198, 198);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5%;
+
+  /* width: 40%; */
+}
+
+#book_name,
+#auther_name {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 2% 5%;
+  border: 2px solid black;
+}
+
+#addButton {
+  align-self: flex-end;
+}
+
+.delete,
+#addButton {
+  padding: 5px 10px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 4px black;
+}
+
+.contacts_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contacts_info span {
+  align-self: flex-start;
+}
+
+.contacts_info ul {
+  padding-left: 10%;
+}
+
+.contacts_info ul .list-contact {
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+footer div {
+  border: 2px solid black;
+  width: 100%;
+  padding: 24px;
+  max-width: calc(1100px - 48px);
+}
+
+footer .footer-info {
+  align-self: flex-start;
+}
+
+.disable-section {
+  display: none;
+}
