@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shubhambhoyar077/awesome-book/issues"
   },
-  "homepage": "https://github.com/shubhambhoyar077/awesome-book#readme"
+  "homepage": "https://github.com/shubhambhoyar077/awesome-book#readme",
+  "dependencies": {
+    "luxon": "^3.2.1"
+  }
 }
