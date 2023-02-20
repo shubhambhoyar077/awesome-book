@@ -1,6 +1,6 @@
-import {Book} from "../modules/book.js";
-import { showDateTime } from "../modules/showTime.js";
-import { navBar } from "../modules/navBar.js";
+import Book from '../modules/book.js';
+import showTime from '../modules/showTime.js';
+import navBar from '../modules/navBar.js';
 
 const bookList = document.querySelector('.books');
 const bookName = document.getElementById('book_name');
@@ -27,4 +27,4 @@ navList.addEventListener('click', (event) => {
 });
 
 newBook.restoreBook();
-showDateTime();
+showTime();

@@ -1,7 +1,8 @@
-import { DateTime } from "../modules/luxon.js";
+import { DateTime } from './luxon.js';
 
-export const showDateTime = () =>{
+const showTime = () => {
   const dateTimeSpan = document.getElementById('currentDateTime');
-  let dt = DateTime.now();
+  const dt = DateTime.now();
   dateTimeSpan.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
-}
+};
+export default showTime;

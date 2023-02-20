@@ -1,6 +1,6 @@
-import { Storage } from "./storage.js";
+import Storage from './storage.js';
 
-export class Book {
+export default class Book {
   constructor(bookList) {
     this.storage = new Storage();
     this.bookAddMsg = document.getElementById('book-add-msg');
@@ -38,7 +38,7 @@ export class Book {
       title: bookName,
       author: autName,
     };
-    this.bookAddMsg.textContent = '"' + bookName + '" book added';
+    this.bookAddMsg.textContent = `"${bookName}" book added`;
     this.bookAddMsg.classList.remove('diable-msg');
     this.bookStore.push(objBook);
     this.displayBook(objBook);
@@ -52,7 +52,7 @@ export class Book {
     this.updateLocalStorage();
   }
 
-  restoreBook(){
+  restoreBook() {
     if (!localStorage.getItem('book_list')) {
       this.storage.updateLocalStorage(this.bookStore, this.bookCount);
       [this.bookStore, this.bookCount] = this.storage.getLocalStorage();
@@ -64,11 +64,7 @@ export class Book {
     }
   }
 
-  updateLocalStorage(){
+  updateLocalStorage() {
     this.storage.updateLocalStorage(this.bookStore, this.bookCount);
   }
-
-
-
-  
 }
