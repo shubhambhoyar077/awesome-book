@@ -3,6 +3,7 @@ import { Storage } from "./storage.js";
 export class Book {
   constructor(bookList) {
     this.storage = new Storage();
+    this.bookAddMsg = document.getElementById('book-add-msg');
     this.bookStore = [
       {
         id: 'book_0',
@@ -37,7 +38,8 @@ export class Book {
       title: bookName,
       author: autName,
     };
-
+    this.bookAddMsg.textContent = '"' + bookName + '" book added';
+    this.bookAddMsg.classList.remove('diable-msg');
     this.bookStore.push(objBook);
     this.displayBook(objBook);
     this.updateLocalStorage();
